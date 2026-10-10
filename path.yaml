@@ -1,0 +1,148 @@
+# Preparation path. Keep its course registration draft until content is ready.
+apiVersion: content.astrona.io/v1alpha1
+kind: TrainingPath
+metadata:
+  id: ATP009
+  slug: kubernetes-and-cloud-native-security-associate-kcsa
+  title: Kubernetes and Cloud Native Security Associate (KCSA)
+  description: 'Preparation path for KCSA: one training series per curriculum domain. Content authoring
+    is planned.'
+  version: 0.1.0
+  language: en
+  authors:
+  - name: Paris Nakita Kejser
+    email: paris@astrona.io
+    company: Astrona.io
+  tags:
+  - KCSA
+  - Certification Preparation
+  license: Apache-2.0
+spec:
+  audience: Learners preparing for Kubernetes and Cloud Native Security Associate (KCSA).
+  difficulty: Beginner
+  examPreparation:
+    enabled: true
+    title: Kubernetes and Cloud Native Security Associate (KCSA)
+    officialSyllabusUrl: https://training.linuxfoundation.org/certification/kubernetes-and-cloud-native-security-associate-kcsa/
+    examId: KCSA
+    provider: CNCF / The Linux Foundation
+  prerequisites:
+  - Basic command-line knowledge and familiarity with the subject of the exam.
+  - A computer capable of running the environments selected during content authoring.
+  learningOutcomes:
+  - Prepare for the Overview of Cloud Native Security domain.
+  - Prepare for the Kubernetes Cluster Component Security domain.
+  - Prepare for the Kubernetes Security Fundamentals domain.
+  - Prepare for the Kubernetes Threat Model domain.
+  - Prepare for the Platform Security domain.
+  - Prepare for the Compliance and Security Frameworks domain.
+  stages:
+  - id: ATP009-STG001
+    title: Overview of Cloud Native Security
+    description: Prepare for Overview of Cloud Native Security.
+    examDomain: Overview of Cloud Native Security
+    weight: 14
+    learningOutcomes:
+    - The 4Cs of Cloud Native Security
+    - Cloud Provider and Infrastructure Security
+    - Controls and Frameworks
+    - Isolation Techniques
+    - Artifact Repository and Image Security
+    - Workload and Application Code Security
+    content:
+    - ref: ATS041
+      repository: https://github.com/astrona-io/ATS041
+      path: .
+      version: 0.1.0
+  - id: ATP009-STG002
+    title: Kubernetes Cluster Component Security
+    description: Prepare for Kubernetes Cluster Component Security.
+    examDomain: Kubernetes Cluster Component Security
+    weight: 22
+    learningOutcomes:
+    - API Server
+    - Controller Manager
+    - Scheduler
+    - Kubelet
+    - Container Runtime
+    - KubeProxy
+    - Pod
+    - Etcd
+    - Container Networking
+    - Client Security
+    - Storage
+    content:
+    - ref: ATS042
+      repository: https://github.com/astrona-io/ATS042
+      path: .
+      version: 0.1.0
+  - id: ATP009-STG003
+    title: Kubernetes Security Fundamentals
+    description: Prepare for Kubernetes Security Fundamentals.
+    examDomain: Kubernetes Security Fundamentals
+    weight: 22
+    learningOutcomes:
+    - Pod Security Standards
+    - Pod Security Admissions
+    - Authentication
+    - Authorization
+    - Secrets
+    - Isolation and Segmentation
+    - Audit Logging
+    - Network Policy
+    content:
+    - ref: ATS043
+      repository: https://github.com/astrona-io/ATS043
+      path: .
+      version: 0.1.0
+  - id: ATP009-STG004
+    title: Kubernetes Threat Model
+    description: Prepare for Kubernetes Threat Model.
+    examDomain: Kubernetes Threat Model
+    weight: 16
+    learningOutcomes:
+    - Kubernetes Trust Boundaries and Data Flow
+    - Persistence
+    - Denial of Service
+    - Malicious Code Execution and Compromised Applications in Containers
+    - Attacker on the Network
+    - Access to Sensitive Data
+    - Privilege Escalation
+    content:
+    - ref: ATS044
+      repository: https://github.com/astrona-io/ATS044
+      path: .
+      version: 0.1.0
+  - id: ATP009-STG005
+    title: Platform Security
+    description: Prepare for Platform Security.
+    examDomain: Platform Security
+    weight: 16
+    learningOutcomes:
+    - Supply Chain Security
+    - Image Repository
+    - Observability
+    - Service Mesh
+    - PKI
+    - Connectivity
+    - Admission Control
+    content:
+    - ref: ATS045
+      repository: https://github.com/astrona-io/ATS045
+      path: .
+      version: 0.1.0
+  - id: ATP009-STG006
+    title: Compliance and Security Frameworks
+    description: Prepare for Compliance and Security Frameworks.
+    examDomain: Compliance and Security Frameworks
+    weight: 10
+    learningOutcomes:
+    - Compliance Frameworks
+    - Threat Modelling Frameworks
+    - Supply Chain Compliance
+    - Automation and Tooling
+    content:
+    - ref: ATS046
+      repository: https://github.com/astrona-io/ATS046
+      path: .
+      version: 0.1.0
