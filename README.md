@@ -1,3 +1,9 @@
+<p align="center">
+  <a href="https://astrona.io/courses/kubernetes-and-cloud-native-security-associate-kcsa">
+    <img src="https://astrona.io/courses/kubernetes-and-cloud-native-security-associate-kcsa/banner.svg" alt="Kubernetes and Cloud Native Security Associate: exam domains on Astrona" width="100%">
+  </a>
+</p>
+
 # ATP009 — Kubernetes and Cloud Native Security Associate (KCSA)
 
 Preparation scaffold: one stage per exam domain, connected through `path.yaml`
